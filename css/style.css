@@ -1,0 +1,119 @@
+/* CSS VARIABLES ----->>Helps to use some logic again and again */
+
+:root {
+    --bcolor: orange;
+    --border: 1px solid orange;
+    /* --width: 40px; */
+    --height: 5px;
+    --border-radius: 10px;
+
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: lightgreen;
+}
+
+.progress-range {
+    border: 1px solid black;
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    /* border: 1px solid orange; */
+    /* background-color: orange; */
+    width: 0%;
+    /* height: 5px;
+    border-radius: 10px; */ 
+    border: var(--border);
+    /* width: var(--width); */
+    height: var(--height);
+    background-color: var(--bcolor);
+    border-radius: var(--border-radius);
+
+}
+
+.volume-bar {
+
+    /* border: 1px solid orange; */
+    /* background-color: orange; */
+     width: 5%;
+    /* height: 5px;
+    border-radius: 10px; */ 
+    border: var(--border);
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--bcolor);
+    border-radius: var(--border-radius);
+
+
+}
+
+.volume-range {
+    border: 1px solid black;
+    background-color: black;
+    width: 150px;
+    height: 10px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.controls-left {
+    display: flex;
+
+}
+
+#play,
+#volume,
+#volume-range {
+    margin-left: 15px;
+}
+
+.controls-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+
+.time {
+    display: flex;
+}
+
+#speed,
+#time,
+#fullscreen {
+    margin-left: 15px;
+}
+
+#play:hover {
+    color: grey;
+    transition: 1s;
+}
+
+#volume:hover {
+    color: grey;
+    transform: 1s;
+}
+
+video{
+    width: 100%;
+    height: 80%;
+}
